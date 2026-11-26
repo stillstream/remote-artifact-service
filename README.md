@@ -15,11 +15,11 @@
 ## 第一版能力
 
 - 多个只读目录 root 配置和目录浏览
-- 文本、Markdown、JSON、CSV、日志预览
+- 文本、Markdown 源文、JSON、CSV、日志预览（v0.1 不做 Markdown 渲染）
 - HTML 沙箱预览
 - PNG/JPEG/GIF/WebP/SVG 图片预览
 - MP4/WebM 视频、音频和 PDF 预览
-- 文件下载与 HTTP Range
+- 文件下载与 HTTP Range（包括视频/音频预览所需的 Range 请求）
 - 简单 Web UI、健康检查 API
 - 配置文件、安装/启动/停止脚本
 - 路径穿越、符号链接越界和只读行为测试
