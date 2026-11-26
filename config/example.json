@@ -1,0 +1,6 @@
+{
+  "host": "127.0.0.1",
+  "port": 18765,
+  "roots": [{"id": "projects", "label": "Projects", "path": "/home/USER/workspace/project", "show_hidden": false}],
+  "max_preview_bytes": 2097152
+}
