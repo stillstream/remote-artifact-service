@@ -91,7 +91,7 @@ const app=document.querySelector('#app');const esc=s=>String(s).replace(/[&<>\"'
         value = request.headers.get("range")
         if value:
             import re
-            m = re.fullmatch(r"bytes=(\\d*)-(\\d*)", value.strip())
+            m = re.fullmatch(r"bytes=(\d*)-(\d*)", value.strip())
             if not m: raise HTTPException(416, "invalid range")
             a,b=m.groups()
             if not a and not b: raise HTTPException(416, "invalid range")
