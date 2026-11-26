@@ -50,7 +50,7 @@ def media_type(path: Path) -> str:
 
 def ranged_response(path: Path, request: Request, *, inline: bool = True) -> Response:
     size = path.stat().st_size
-    start, end, status = 0, max(size - 1, 0), 200
+    start, end, status = 0, size - 1, 200
     value = request.headers.get("range")
     if value:
         match = _RANGE.fullmatch(value.strip())
